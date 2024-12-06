@@ -2,9 +2,10 @@ import type { Day, ProblemSolver } from "./Types";
 
 const days: { [key: number]: Day } = {
   1: require("./day1").default,
+  2: require("./day2").default,
 };
 
-const ACTIVE_DAY = 1;
+const ACTIVE_DAY = 2;
 
 async function runSolve(solver: ProblemSolver, index: number) {
   console.log(`******* Problem ${index} *******`);

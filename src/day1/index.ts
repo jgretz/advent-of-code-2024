@@ -1,4 +1,4 @@
-import { example_data, puzzleData } from "./data";
+import { exampleData, puzzleData } from "./data";
 
 type Lists = [number[], number[]];
 
@@ -53,7 +53,7 @@ function calculateSimilarityScoreForData(data: string): string {
 
 const problem1 = {
   example: function () {
-    return calculateDistanceForData(example_data);
+    return calculateDistanceForData(exampleData);
   },
   puzzle: function () {
     return calculateDistanceForData(puzzleData);
@@ -62,7 +62,7 @@ const problem1 = {
 
 const problem2 = {
   example: function () {
-    return calculateSimilarityScoreForData(example_data);
+    return calculateSimilarityScoreForData(exampleData);
   },
   puzzle: function () {
     return calculateSimilarityScoreForData(puzzleData);
