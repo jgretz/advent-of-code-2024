@@ -3,9 +3,10 @@ import type { Day, ProblemSolver } from "./Types";
 const days: { [key: number]: Day } = {
   1: require("./day1").default,
   2: require("./day2").default,
+  3: require("./day3").default,
 };
 
-const ACTIVE_DAY = 2;
+const ACTIVE_DAY = 3;
 
 async function runSolve(solver: ProblemSolver, index: number) {
   console.log(`******* Problem ${index} *******`);
